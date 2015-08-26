@@ -49,5 +49,14 @@ namespace Ap.Express.Host.Configuration
                 return (string)this["root"];
             }
         }
+
+        [ConfigurationProperty("cultureResources", IsRequired = false)]
+        public string CultureResources
+        {
+            get
+            {
+                return (string)this["cultureResources"];
+            }
+        }
     }
 }

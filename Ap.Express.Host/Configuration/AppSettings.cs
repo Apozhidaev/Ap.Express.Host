@@ -6,12 +6,14 @@ namespace Ap.Express.Host.Configuration
     public static class AppSettings
     {
         private static readonly string[] _urls;
+        private static readonly string[] _cultureResources;
         private static readonly GlobalSection _global;
 
         static AppSettings()
         {
             _global = (GlobalSection)ConfigurationManager.GetSection("global");
             _urls = _global.Url.Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries);
+            _cultureResources = _global.CultureResources.Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries);
         }
 
         public static string Description
@@ -37,6 +39,11 @@ namespace Ap.Express.Host.Configuration
         public static string[] Urls
         {
             get { return _urls; }
+        }
+
+        public static string[] CultureResources
+        {
+            get { return _cultureResources; }
         }
     }
 }

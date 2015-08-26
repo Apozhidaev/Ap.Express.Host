@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ap.Express, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ap.Express.1.0.3\lib\Ap.Express.dll</HintPath>
+      <HintPath>..\packages\Ap.Express.1.0.4\lib\Ap.Express.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Owin">
