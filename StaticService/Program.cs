@@ -1,7 +1,7 @@
-﻿using Ap.Express.Host.Configuration;
+﻿using StaticService.Configuration;
 using Topshelf;
 
-namespace Ap.Express.Host
+namespace StaticService
 {
     class Program
     {

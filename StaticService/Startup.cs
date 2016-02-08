@@ -1,8 +1,9 @@
 using System.Web.Http;
-using Ap.Express.Host.Configuration;
+using Express;
 using Owin;
+using StaticService.Configuration;
 
-namespace Ap.Express.Host
+namespace StaticService
 {
     public class Startup
     {

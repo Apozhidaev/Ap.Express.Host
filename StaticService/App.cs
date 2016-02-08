@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.Owin.Hosting;
-using Ap.Express.Host.Configuration;
+using StaticService.Configuration;
 
-namespace Ap.Express.Host
+namespace StaticService
 {
     public class App
     {
@@ -10,7 +10,6 @@ namespace Ap.Express.Host
 
         public void Start()
         {
-
             var startOptions = new StartOptions();
             foreach (var url in AppSettings.Urls)
             {
